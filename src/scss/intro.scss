@@ -1,0 +1,49 @@
+@import 'variables';
+
+.intro {
+    height: $intro-height;
+    background: url('../assets/img/intro-bg.png') no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__title {
+        font-size: $intro-fz-title;
+        color: $intro-cl-title;
+        text-transform: uppercase;
+        letter-spacing: -8px;
+    }
+
+    &__subtitle {
+        font-size: $intro-fz-subtitle;
+        color: $intro-cl-subtitle;
+        text-transform: uppercase;
+        letter-spacing: 20px;
+    }
+
+    &__mark {
+        margin-top: 110px;
+        font-size: 13px;
+        color: #fff;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 200%;
+            left: 50%;
+            transform: rotate(135deg) translate(110%, -40%);
+            height: 20px;
+            width: 20px;
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+        }
+    }
+}
