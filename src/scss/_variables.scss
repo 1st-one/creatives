@@ -1,0 +1,65 @@
+$main-f-fm: 'Open Sans', sans-serif; 
+
+// Header
+$header-height: 116px;
+$header-text-color: #f3f8fa;
+$header-underline-clr: rgba($color: #11749f, $alpha: 0.4);
+$header-hover-link-clr: #11749f;
+
+// Intro 
+$intro-height: 880px;
+$intro-fz-title: 152px;
+$intro-fz-subtitle: 25px;
+$intro-cl-subtitle: #11749e;
+$intro-cl-title: $header-text-color;
+
+// Section 
+$sec-bg: #11749e;
+
+    // Headline
+    $sec-fz-letter: 200px;
+    $sec-cl-letter: #5993b2;
+    $sec-fz-title: 38px;
+    $sec-cl-title: $header-text-color;
+
+        // B
+        $sec-b-cl-letter: #d7d7d7;
+        $sec-b-cl-title: #000; 
+        $sec-b-bg: #fff;
+    
+    // Feature
+    $f-width-item: 260px;
+    $f-bg-img: $sec-cl-letter;
+    $f-cl: $header-text-color;
+    $f-fz-title: 18px;
+
+// Article 
+$a-cl-text: $header-text-color;
+$a-fz-data: 13px;
+$a-fz-title: 25px;
+$a-fz-text: 15px;
+
+// Blog 
+$blog-title-fz: 31px;
+$blog-title-cl: #000;
+$blog-item-title-fz: 18px;
+$blog-item-title-cl: #11749e;
+$blog-item-content-fz: 15px;
+$blog-item-content-cl: #000;
+
+    // footer 
+    $blog-footer-bg: #11749e;
+    $blog-footer-item-text-fz: 15px;
+    $blog-footer-item-text-cl: #fff;
+
+
+// Requirements 
+$req-item-cl: #fff;
+$req-item-title-fz: 15px;
+$req-require-bg: #11749e;
+
+// Team
+
+$team-name-cl: #11749e;
+$team-name-fz: 20px;
+$team-prof-fz: 15px;

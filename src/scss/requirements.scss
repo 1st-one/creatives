@@ -1,0 +1,63 @@
+@import 'variables';
+
+.requirements {
+    background: url('../assets/img/requirements/bg.png') no-repeat center;
+    background-size: 100% 100%;
+
+
+    .container {
+        position: relative;
+    }
+
+    img {
+        display: block;
+        position: absolute;
+        top: 45%;
+        right: 0;
+        transform: translateY(-45%);
+        
+    }
+
+    &__item {
+        color: $req-item-cl;
+        width: 40%;
+        padding: 240px 0;
+
+
+        &-title {
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            font-weight: bold;
+        }
+
+        &-text {
+            font-size: $req-item-title-fz;
+            margin-bottom: 60px;
+        }
+
+        &-require {
+            text-transform: uppercase;
+            font-size: $req-item-title-fz;
+
+            .design {
+                margin: 0 0 20px;
+                padding: 10px;
+                background-color: $req-require-bg;
+                width: 70%;
+            }
+
+            .code {
+                margin: 0 0 20px;
+                padding: 10px;
+                background-color: $req-require-bg;
+                width: 80%;
+            }
+
+            .layout {
+                padding: 10px;
+                background-color: $req-require-bg;
+                width: 90%;
+            }
+        }
+    }
+}

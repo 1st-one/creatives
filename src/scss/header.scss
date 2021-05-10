@@ -1,0 +1,96 @@
+@import 'variables';
+
+.header {
+    position: absolute;
+    height: $header-height;
+    background-color: transparent;
+    border-bottom: 2px solid rgba($color: #787878, $alpha: .47);
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+    }
+
+    &__link {
+        display: flex;
+        width: 140px;
+        justify-content: space-between;
+
+        a {
+            width: 20px;
+            height: 25px;
+
+            i {
+                font-size: 18px;
+                color: $header-text-color;
+                transition: color .2s linear;
+            }
+
+            &:hover {
+                i {
+                    color: $header-hover-link-clr;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+
+        &-item {
+            position: relative;
+            padding: 0 20px;
+
+            &.active {
+                a {
+                    opacity: 1;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            a {
+                opacity: 0.6;
+                text-decoration: none;
+                color: $header-text-color;
+                transition: opacity .2s linear;
+            }
+
+            &::after {
+                content: "";
+                height: 6px;
+                width: 100%;
+                background-color: $header-underline-clr;
+                position: absolute;
+                bottom: -52px;
+                left: 0;
+                z-index: 1;
+                opacity: 0;
+                transition: opacity .2s linear;
+            }
+
+            &:hover {
+                a {
+                    opacity: 1;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

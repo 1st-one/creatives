@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'header.scss';
+@import 'intro.scss';
+@import 'section.scss';
+@import 'article.scss';
+@import 'blog.scss';
+@import 'requirements.scss';
+@import 'team.scss';
+@import 'form.scss';
+@import 'footer.scss';
+
+body, html {
+    margin: 0;
+    font-size: 20px;
+    font-family: $main-f-fm;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.page {
+ overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}

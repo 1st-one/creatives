@@ -1,0 +1,49 @@
+@import 'variables';
+
+.team {
+    text-align: center;
+    padding-bottom: 100px;
+
+    &__title {
+        color: $blog-title-cl;
+        font-size: $blog-title-fz;
+        padding-bottom: 80px;
+    }
+
+    &__table {
+        display: flex;
+
+        &-item {
+            position: relative;
+            flex: 1 1 0;
+            padding: 0 15px;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+
+            &-content {
+                position: absolute;
+                bottom: -12%;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 10px;
+                background-color: #fff;
+                width: 70%;
+                font-weight: bold;
+
+                .name {
+                    text-transform: uppercase;
+                    color: $team-name-cl;
+                    font-size: $team-name-fz;
+                }
+
+                .prof {
+                    font-size: $team-prof-fz;
+                }
+            }
+        }
+    }
+}

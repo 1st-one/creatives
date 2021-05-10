@@ -9,10 +9,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1st-one/apple.web.git"
+    "url": "https://github.com/1st-one/creatives"
   },
   "keywords": [
-    "apple"
+    "creatives"
   ],
   "author": "Nikita Yakovlev",
   "license": "ISC",

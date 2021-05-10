@@ -1,0 +1,109 @@
+@import 'variables';
+
+.section {
+
+    &.c {
+        background: url('../assets/img/section-c-bg.png') no-repeat center / cover;
+
+
+        .section__headline {
+
+            &-letter {
+                color: $sec-b-cl-letter;
+            }
+
+            &-title {
+                width: 100%;
+                color: #fff;
+            }
+        }
+    }
+
+    &.b, &.t {
+        background-color: $sec-b-bg;
+
+        .section__headline {
+
+            &-letter {
+                color: $sec-b-cl-letter;
+            }
+
+            &-title {
+                color: $sec-b-cl-title;
+            }
+        }
+
+    }
+
+    background-color: $sec-bg;
+
+    
+    &__headline {
+        position: relative;
+        text-align: center;
+        padding: 100px 0;
+
+        &-letter {
+            font-size: $sec-fz-letter;
+            color: $sec-cl-letter;
+            font-weight: 600;
+            line-height: 0.8;
+        }
+
+        &-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: $sec-fz-title;
+            color: $sec-cl-title;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+
+    &__feature {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 140px;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 10px;
+            max-width: $f-width-item;
+
+            &-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: $f-width-item / 2;
+                height: $f-width-item / 2;
+                background-color: $f-bg-img;
+                border: 1px solid transparent;
+                border-radius: 50%;
+
+                i {
+                    font-size: 30px;
+                    color: $f-cl;
+                    transform: translateX(10%);
+                }
+            }
+
+            &-title {
+                font-size: $f-fz-title;
+                text-transform: uppercase;
+                color: $f-cl;
+                padding: 20px 0;
+            }
+
+            &-text {
+                font-size: $f-fz-title * 0.83;
+                color: $f-cl;
+            }
+        }
+    }
+}
+

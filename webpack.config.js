@@ -22,8 +22,8 @@ module.exports = {
     extensions: ['.js', '.jsx'],
     alias: {
       '@': path.resolve(__dirname, 'src'),
-      '@header': path.resolve(__dirname, 'src/components/header'),
-      '@img': path.resolve(__dirname, 'assets/image'),
+      '@cmp': path.resolve(__dirname, 'src/components'),
+      '@img': path.resolve(__dirname, 'src/assets/img'),
     }
   },
   devtool: isDev ? 'source-map' : false,
@@ -34,7 +34,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HTMLWebpackPlugin({
-      template: 'index.html',
+      template: 'assets/index.html',
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd
