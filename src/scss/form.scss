@@ -51,5 +51,21 @@
         color: #fff;
         text-transform: uppercase;
         cursor: pointer;
+        position: relative;
+
+        &.active {
+
+            &::after {
+                width: 100%;
+                position: absolute;
+                content: 'Something wrong, check holders.';
+                top: 110%;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 14px;
+                color: rgba(255, 0, 0, 0.603);
+                text-transform: none;
+            } 
+        }
     }
 }
