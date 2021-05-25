@@ -1,42 +1,46 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '@/assets/img/header/logo.png';
 
 const Header = () => {
+    const [activeMode, setActiveMode] = useState(false);
+
     return (
         <header className="header">
             <div className="container">
-                <img src={logo} alt="" width="78px" height="75px"/>
-                <ul className="header__nav">
+                <img src={logo} alt="" width="78px" height="75px" />
+                <div className={activeMode ? "header__burger active" : "header__burger"} onClick={() => setActiveMode(!activeMode)}></div>
+                <ul className={activeMode ? "header__nav active" : "header__nav"}>
                     <li className="header__nav-item active">
-                        <a href="#">Home</a>
+                        <Link to='/'>Home</Link>
                     </li>
                     <li className="header__nav-item">
-                        <a href="#">Pages</a>
+                        <Link to='/pages'>Pages</Link>
                     </li>
                     <li className="header__nav-item">
-                        <a href="#">Features</a>
+                        <Link to='/features'>Features</Link>
                     </li>
                     <li className="header__nav-item">
-                        <a href="#">Extensions</a>
+                        <Link to='/extensions'>Extensions</Link>
                     </li>
                     <li className="header__nav-item">
-                        <a href="#">Tutorials</a>
+                        <Link to='/tutorials'>Tutorials</Link>
                     </li>
                     <li className="header__nav-item">
-                        <a href="#">Contact us</a>
+                        <Link to='/contact'>Contact us</Link>
                     </li>
                 </ul>
                 <div className="header__link">
-                    <a href="#">
+                    <a href="https://twitter.com/?lang=ru" target="_blank">
                         <i className="fab fa-twitter"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.facebook.com/" target="_blank">
                         <i className="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/" target="_blank">
                         <i className="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://www.skype.com/" target="_blank">
                         <i className="fab fa-skype"></i>
                     </a>
                 </div>
